@@ -1,0 +1,112 @@
+% Michael Clancy Resume
+% Compile with pdflatex or xelatex
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\normalfont\bfseries\scshape}
+  {}{0pt}{}
+  [\vspace{-0.35em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.7em}{0.35em}
+
+\setlist[itemize]{
+  leftmargin=1.35em,
+  itemsep=0.1em,
+  topsep=0.1em,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\resumeEntry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4}
+  \end{tabularx}
+  \vspace{-0.25em}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Michael Clancy}\\[2pt]
+    \href{mailto:mdclancy@uchicago.edu}{mdclancy@uchicago.edu}
+    \quad|\quad
+    (202) 359-6975
+\end{center}
+
+\vspace{-0.4em}
+
+\section{Education}
+
+\resumeEntry
+  {The University of Chicago}{Chicago, IL}
+  {Bachelor of Science in Mathematics with Honors}{June 2026}
+GPA: 3.7/4.0\\
+\\
+Selected Coursework: Honors Combinatorics, Abstract Linear Algebra, Systems Programming, Mechanics, Optics, Accelerated Real and Complex Analaysis, Differentiable Manifolds, Systems Programming
+
+\section{Experience}
+
+\resumeEntry
+  {The Binnacle Group}{New Canaan, CT (Remote)}
+  {Investment Operations Intern}{May 2025--August 2025}
+\begin{itemize}
+  \item Led a multi-state project consolidating withholding and unemployment tax accounts, coordinating directly with agencies in more than a dozen states to resolve discrepancies.
+  \item Consulted on implementation of proprietary AI agents into accounting and investment operations workflows.
+  \item Developed and implemented a standardized document management system across portfolio companies, improving organization and retrieval of corporate records.
+\end{itemize}
+
+\resumeEntry
+  {University of Chicago Department of Mathematics}{Chicago, IL}
+  {Student Researcher}{June 2024--September 2024}
+\begin{itemize}
+  \item Worked under faculty on a funded independent research project proving fundamental theorems of Model Theory using back-and-forth games.
+  \item Participated in graduate-level seminars across areas of advanced mathematics.
+\end{itemize}
+
+\section{Leadership \& Activities}
+
+\resumeEntry
+  {University of Chicago Folklore Society}{Chicago, IL}
+  {President}{September 2023--June 2026}
+\begin{itemize}
+  \item Organized a nonprofit music festival featuring artists from across North America with 1,000+ attendees and annual budget of over \$25,000 including \$20,000 of gross revenue.
+  \item Negotiated and drafted all artist contracts, secured organizational savings of over \$5,000.
+  \item Oversaw a team of 15 festival organizers as well as over 60 additional volunteer staff.
+  \item Managed external communication of the Folklore Society in interviews and at fundraising, social, and community events across the city.
+\end{itemize}
+
+\resumeEntry
+  {Endeavor Racing}{Chicago, IL}
+  {Competitive Helmsman}{June 2024--Present}
+\begin{itemize}
+  \item Helmed and navigated 9-crew vessel in offshore overnight races, including 3 CYC Race to Mackinac. Exercised navigational and watch-leading abilities under pressure and in adverse weather conditions.
+\end{itemize}
+
+\resumeEntry
+  {Phoenix House}{Chicago, IL}
+  {President}{September 2023--June 2024}
+\begin{itemize}
+  \item Responsible for a residential community of 100+ undergraduate students.
+  \item Led community meetings to address concerns, advocated on behalf of residents to university administrators.
+\end{itemize}
+
+\section{Skills}
+
+\textbf{Languages:} English (Native), Spanish (Conversational)\\
+\textbf{Technical:} MS Office, Google Suite, Python, and C (Experienced)
+
+\end{document}
